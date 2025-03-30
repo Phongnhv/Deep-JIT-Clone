@@ -1,0 +1,128 @@
+w/o loading astObj
+Epoch: 0
+Training loss: 0.581
+Validation loss: 0.556
+Validation precision: 0.771
+Validation recall: 0.673
+Validation f1: 0.719
+Saved
+-----------------------------------
+Epoch: 1
+Training loss: 0.495
+Validation loss: 0.507
+Validation precision: 0.773
+Validation recall: 0.712
+Validation f1: 0.741
+Saved
+-----------------------------------
+Epoch: 2
+Training loss: 0.461
+Validation loss: 0.462
+Validation precision: 0.883
+Validation recall: 0.661
+Validation f1: 0.756
+Saved
+-----------------------------------
+Epoch: 3
+Training loss: 0.432
+Validation loss: 0.460
+Validation precision: 0.859
+Validation recall: 0.703
+Validation f1: 0.773
+Saved
+-----------------------------------
+Epoch: 4
+Training loss: 0.416
+Validation loss: 0.428
+Validation precision: 0.871
+Validation recall: 0.701
+Validation f1: 0.777
+Saved
+-----------------------------------
+Epoch: 5
+Training loss: 0.406
+Validation loss: 0.418
+Validation precision: 0.865
+Validation recall: 0.726
+Validation f1: 0.789
+Saved
+-----------------------------------
+Epoch: 6
+Training loss: 0.397
+Validation loss: 0.453
+Validation precision: 0.891
+Validation recall: 0.677
+Validation f1: 0.769
+-----------------------------------
+Epoch: 7
+Training loss: 0.394
+Validation loss: 0.429
+Validation precision: 0.880
+Validation recall: 0.697
+Validation f1: 0.778
+-----------------------------------
+Epoch: 8
+Training loss: 0.397
+Validation loss: 0.455
+Validation precision: 0.897
+Validation recall: 0.651
+Validation f1: 0.754
+-----------------------------------
+Epoch: 9
+Training loss: 0.396
+Validation loss: 0.430
+Validation precision: 0.852
+Validation recall: 0.721
+Validation f1: 0.781
+-----------------------------------
+Epoch: 10
+Training loss: 0.409
+Validation loss: 0.474
+Validation precision: 0.868
+Validation recall: 0.700
+Validation f1: 0.775
+-----------------------------------
+Epoch: 11
+Training loss: 0.398
+Validation loss: 0.415
+Validation precision: 0.891
+Validation recall: 0.699
+Validation f1: 0.783
+-----------------------------------
+Epoch: 12
+Training loss: 0.406
+Validation loss: 0.417
+Validation precision: 0.876
+Validation recall: 0.707
+Validation f1: 0.782
+-----------------------------------
+Epoch: 13
+Training loss: 0.425
+Validation loss: 0.449
+Validation precision: 0.883
+Validation recall: 0.660
+Validation f1: 0.756
+-----------------------------------
+Epoch: 14
+Training loss: 0.423
+Validation loss: 0.470
+Validation precision: 0.875
+Validation recall: 0.677
+Validation f1: 0.764
+-----------------------------------
+Epoch: 15
+Training loss: 0.416
+Validation loss: 0.464
+Validation precision: 0.911
+Validation recall: 0.630
+Validation f1: 0.745
+-----------------------------------
+Epoch: 16
+Training loss: 0.411
+Validation loss: 0.508
+Validation precision: 0.915
+Validation recall: 0.616
+Validation f1: 0.736
+-----------------------------------
+Terminating: 17
+Terminating training: 03/28/2025 14:09:43

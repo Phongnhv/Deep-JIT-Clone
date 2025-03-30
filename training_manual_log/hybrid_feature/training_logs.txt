@@ -1,0 +1,118 @@
+Train: 32988
+Valid: 3756
+Test: 3944
+Starting training: 03/29/2025 14:59:34
+Attend code sequence states: True
+Attend code graph states: True
+Features: True
+Task: detect
+NL vocabulary size: 6070
+Code vocabulary size: 10018
+Using 4646 pre-trained NL embeddings
+Using 5207 pre-trained code embeddings
+Model path: detect_attend_code_sequence_states_attend_code_graph_states_features.pkl.gz
+Training with 32988 examples (validation 3756)
+C:\Users\Admin\WorkPlace\ISE - lab\deep-jit-inconsistency-detection-master\module_manager.py:271: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  torch.tensor(code_features, dtype=torch.float32, device=device),
+Epoch: 0
+Training loss: 0.562
+Validation loss: 0.511
+Validation precision: 0.739
+Validation recall: 0.736
+Validation f1: 0.737
+Saved
+-----------------------------------
+Epoch: 1
+Training loss: 0.478
+Validation loss: 0.496
+Validation precision: 0.796
+Validation recall: 0.668
+Validation f1: 0.726
+-----------------------------------
+Epoch: 2
+Training loss: 0.437
+Validation loss: 0.462
+Validation precision: 0.831
+Validation recall: 0.747
+Validation f1: 0.787
+Saved
+-----------------------------------
+Epoch: 3
+Training loss: 0.412
+Validation loss: 0.469
+Validation precision: 0.791
+Validation recall: 0.744
+Validation f1: 0.767
+-----------------------------------
+Epoch: 4
+Training loss: 0.396
+Validation loss: 0.434
+Validation precision: 0.887
+Validation recall: 0.699
+Validation f1: 0.782
+-----------------------------------
+Epoch: 5
+Training loss: 0.395
+Validation loss: 0.479
+Validation precision: 0.875
+Validation recall: 0.658
+Validation f1: 0.751
+-----------------------------------
+Epoch: 6
+Training loss: 0.407
+Validation loss: 0.467
+Validation precision: 0.847
+Validation recall: 0.674
+Validation f1: 0.751
+-----------------------------------
+Epoch: 7
+Training loss: 0.415
+Validation loss: 0.513
+Validation precision: 0.887
+Validation recall: 0.608
+Validation f1: 0.721
+-----------------------------------
+Epoch: 8
+Training loss: 0.475
+Validation loss: 0.539
+Validation precision: 0.763
+Validation recall: 0.667
+Validation f1: 0.712
+-----------------------------------
+Epoch: 9
+Training loss: 0.498
+Validation loss: 0.548
+Validation precision: 0.790
+Validation recall: 0.653
+Validation f1: 0.715
+-----------------------------------
+Epoch: 10
+Training loss: 0.483
+Validation loss: 0.530
+Validation precision: 0.784
+Validation recall: 0.684
+Validation f1: 0.730
+-----------------------------------
+Epoch: 11
+Training loss: 0.481
+Validation loss: 0.478
+Validation precision: 0.772
+Validation recall: 0.758
+Validation f1: 0.765
+-----------------------------------
+Epoch: 12
+Training loss: 0.474
+Validation loss: 0.529
+Validation precision: 0.799
+Validation recall: 0.679
+Validation f1: 0.734
+-----------------------------------
+Epoch: 13
+Training loss: 0.471
+Validation loss: 0.523
+Validation precision: 0.825
+Validation recall: 0.696
+Validation f1: 0.755
+-----------------------------------
+Terminating: 14
+Terminating training: 03/29/2025 17:44:49
