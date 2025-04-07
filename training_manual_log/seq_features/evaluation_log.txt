@@ -5,4 +5,14 @@ False negatives: 527.0
 Precision: 0.8870472682627378
 Recall: 0.7327586206896551
 F1: 0.8025548458761455
-Accuracy: 0.8197261663286004
+Accuracy: 0,8197261663286004
+
+After Prune:
+True positives: 1527.0
+False positives: 234.0
+True negatives: 1738.0
+False negatives: 445.0
+Precision: 0,8671209540034072
+Recall: 0,7743407707910751
+F1: 0,8181087597106885
+Accuracy: 0,8278397565922921

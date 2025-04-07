@@ -1,3 +1,4 @@
+#manage the trainiing and evaluation of the detection task
 import argparse
 from collections import Counter
 import numpy as np
@@ -9,6 +10,8 @@ from torch import nn
 
 from constants import *
 from detection_evaluation_utils import compute_score
+
+import json
 
 
 class DetectionModule(nn.Module):
@@ -127,7 +130,38 @@ class DetectionModule(nn.Module):
                 test_predictions.extend(batch_logprobs.argmax(dim=-1).tolist())
 
         self.compute_metrics(test_predictions, test_examples, model_name)
-    
+
+    def run_train_evaluation(self, train_examples):
+        """
+        Runs evaluation on the training set and returns prediction probabilities and labels for CLD.
+        """
+        self.eval()
+
+        #print([ex.label for ex in train_examples[:10]])
+        
+        train_batches = self.manager.get_batches(train_examples, self.get_device())
+        train_probabilities = []
+        gold_labels = []
+        
+        with torch.no_grad():
+            for b, batch in enumerate(train_batches):
+                print(f'Evaluating train batch {b+1}/{len(train_batches)}')
+                encoder_outputs = self.manager.get_encoder_output(batch, self.get_device())
+                batch_logprobs = self.get_logprobs(encoder_outputs)  # (batch_size, num_classes)
+                
+                batch_probs = torch.exp(batch_logprobs)  # Convert log-probs to probs
+
+                train_probabilities.extend(batch_probs.tolist())  # Convert tensor -> list
+                gold_labels.extend(batch.labels.tolist())  # Convert tensor -> list
+        
+        print('Training evaluation completed.')
+        save_path = "train_results.json"
+        with open(save_path, "w") as f:
+            json.dump({"gold_labels": gold_labels, "train_probabilities": train_probabilities}, f)
+
+        print(f"Saved training results to {save_path}")
+        return gold_labels, train_probabilities
+
     def compute_metrics(self, predicted_labels, test_examples, model_name):
         """Computes evaluation metrics."""
         gold_labels = []

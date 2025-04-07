@@ -6,7 +6,7 @@ from data_utils import DiffAST, DiffExample, DiffASTExample, CommentCategory
 
 PARTITIONS = ['train', 'valid', 'test']
 
-def get_data_splits(comment_type_str=None, ignore_ast=False):
+def get_data_splits(comment_type_str=None, ignore_ast=True):
     """Retrieves train/validation/test sets for the given comment_type_str.
        comment_type_str -- Return, Param, Summary, or None (if None, uses all comment types)
        ignore_ast -- Skip loading ASTs (they take a long time)"""
